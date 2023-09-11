@@ -1093,6 +1093,7 @@ body {
 
 .news {
   position: relative;
+  overflow-x: hidden !important;
   background-color: teal;
 }
 .news__name {

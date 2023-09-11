@@ -74,9 +74,9 @@ const swiper = new Swiper('.news-slider', {
 
             $('.item-bg').addClass('active');
 
-            bg.style.width = `${width}px`;
-            bg.style.height = `${height}px`;
-            bg.style.transform = `translateX(${x}px) translateY(${y}px)`;
+            // bg.style.width = `${width}px`;
+            // bg.style.height = `${height}px`;
+            // bg.style.transform = `translateX(${x}px) translateY(${y}px)`;
         }
     }
 });
@@ -104,7 +104,7 @@ swiper.on('slideChangeTransitionEnd', () => {
 
     $('.item-bg').addClass('active');
 
-    bg.style.width = `${width}px`;
-    bg.style.height = `${height}px`;
-    bg.style.transform = `translateX(${x}px) translateY(${y}px)`;
+    // bg.style.width = `${width}px`;
+    // bg.style.height = `${height}px`;
+    // bg.style.transform = `translateX(${x}px) translateY(${y}px)`;
 });
