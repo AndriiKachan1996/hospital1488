@@ -1,0 +1,266 @@
+.doctors {
+
+
+    &__title {
+        @include font(28px, 700, 1.2, 0.03em);
+		font-family: "Neucha";
+		background-image: linear-gradient(to left, #26c0b4, #166c65);
+		color: transparent;
+		background-clip: text;
+	
+		padding: 35px 0;
+
+		@include tablet{
+		text-align: center;
+		padding: 35px 0;
+		@include font(38px, 600, 1.8, 0.07em);
+		@include desktop{
+		@include font(42px, 900, 1.8, 0.07em);
+
+		}
+		}
+	}
+
+    }
+
+
+
+/*     КАРТКИ     */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
+
+.doctors__card {
+ 
+    position: relative;
+    overflow: hidden;
+    margin: 0.5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    max-width: 290px;
+    width: 100%;
+    color: black;
+    text-align: left;
+    line-height: 1.4em;
+  
+    border-radius: 8px;
+
+    height: 500px;
+
+
+
+
+}
+
+.doctors__card * {
+    box-sizing: border-box;
+    transition: all 0.25s ease;
+}
+
+.doctors__card img {
+
+    background-image: url('https://verkhovyna.life/files/Business/Privat_doc/doc.jpg');
+    height: 250px;
+    vertical-align: top;
+ 
+}
+
+
+
+.doctors__card figcaption {
+    width: 100%;
+    background-color: white;
+    padding: 25px;
+    position: relative;
+}
+
+.doctors__card figcaption:before {
+    position: absolute;
+    content: '';
+    bottom: 100%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 55px 0 0 400px;
+    border-color: transparent transparent transparent white;
+  
+
+}
+
+
+.doctors__card .profile {
+    border-radius: 50%;
+    position: absolute;
+    bottom: 100%;
+    left: 25px;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    border: 3px solid #026667;
+    transition: transform 0.3s ease;
+
+        &:hover,
+        &:focus {
+            transform: scale(1.1);
+        }
+
+}
+
+
+.doctors__specialist{ 
+    @include font(28px, 400, 1.1, 0.05em);
+    font-family: 'Lobster';
+}
+
+.doctors__person {
+    @include font(25px, 400, 1.1, 0.05em);
+
+    font-family: "Alegreya";
+
+ 
+    color: black;
+    margin: 15px 0 15px 0 ;
+}
+
+.doctors__review {
+    @include font(15px, 400, 1.1, 0.05em);
+    font-family: "Preahvihear";
+
+}
+
+
+
+// Cлайдер 
+.wrapper {
+    padding: 30px;
+    min-height: 100%;
+}
+
+.doctors-image-slider {
+    padding: 30px 0 70px 0;
+}
+
+.doctors-image-slider__wrapper {}
+
+.doctors-image-slider__slide {
+    text-align: center;
+}
+
+.doctors-image-slider__slide img {
+    max-width: 100%;
+    /* width: 500px;
+    height: 400px; */
+
+
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+}
+
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+/* стрілки */
+
+.doctors-swiper-button-next:after,
+.doctors-swiper-button-prev:after {
+color: #141414;
+}
+
+/* буліти */
+
+.doctors-image-slider__image {
+    /* height: 50px; */
+}
+
+// .doctors-image-slider .swiper-pagination {
+//     /* bottom: 25px; */
+//     /* padding: 40px 0 40px 0; */
+//     font-size: 40px;
+//     color: aquamarine;
+// }
+
+.doctors-image-slider .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    font-size: 22px;
+    background-color: black;
+
+}
+
+.swiper-scrollbar-drag {
+    cursor: pointer;
+    background-color: #026667;
+}
+
+.doctors-image-slider .swiper-slide {
+    width: auto;
+}
+
+/*mультиряднісь*/
+
+/* .doctors-image-slider {
+    height: 700px;
+}
+
+.doctors-image-slider .swiper-slide {
+    height: calc((100% - 30px) / 2);
+    overflow: hidden;
+}
+
+/*вертикальний слайдер*/
+
+/* .doctors-image-slider {
+    padding: 0px 0 0px 0;
+    height: 700px;
+}  */
+
+
+/* до ефекта куба */
+
+/* .doctors-image-slider {
+    width: 600px;
+ 
+}  */
+
+/* кастомні пагінації  */
+
+.doctors-image-slider__fraction {
+    padding: 10px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #ccc;
+
+}
+
+.doctors-image-slider__sepparator {
+    margin: 0px 15px;
+}
+
+.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+    position: inherit;
+    left: 0;
+    bottom: 0px;
+    z-index: 50;
+    height: 5px;
+    width: 100%;
+    margin-top: 20px;
+    // background-color: #166c65;
+}
+
+

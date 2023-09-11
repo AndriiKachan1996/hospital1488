@@ -1,0 +1,35 @@
+.header {
+	border-bottom: 1px solid $color-header-border;
+
+	&__logo--img {
+		border-radius: 50%;
+		width: 90px;
+		margin-bottom: -30px;
+
+		@include tablet {
+			width: 120px;
+			margin-bottom: -40px;
+			margin-right: 60px;
+		}
+		@include desktop {
+			width: 180px;
+			margin-bottom: -70px;
+			margin-right: 80px;
+		}
+	}
+
+	&__container {
+		display: flex;
+		align-items: center;
+		min-height: 60px;
+	}
+
+	@include tablet {
+		min-height: 80px;
+
+		@include desktop {
+			@include font(26px, 700, 1.2, 0.03em);
+			margin-right: 93px;
+		}
+	}
+}

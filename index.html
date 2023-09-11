@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" href="./images/logo-min.png">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,400;1,600&family=Borel&family=Lobster&family=Neucha&family=Old+Standard+TT:wght@700&family=Preahvihear&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,400;1,600&family=Borel&family=Lobster&family=Neucha&family=Preahvihear&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <title>Київська обласна дитяча лікарня №2</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/main.css" />
+
+
+</head>
+
+
+<body>
+  <!-- ШАПКА -->
+  <header class="header">
+    <div class=" header__container container">
+      <div class="header__logo-wrap">
+
+        <img src="./images/logo.png" alt="logo" class=" header__logo--img">
+
+      </div>
+
+      <button type="button" class="header__button">
+        <svg width="40" height="40" class="header__icon js-open-menu" aria-expanded="false">
+          <use href="./images/icon.svg#menu"></use>
+        </svg>
+        <svg width="40" height="40" class="header__icon js-close-menu">
+          <use href="./images/icon.svg#cross"></use>
+        </svg>
+
+
+
+
+      </button>
+      <div class="header__burger js-menu-container">
+        <nav class="nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link link nav__link--current">Головна</a>
+            </li>
+
+
+
+
+            </li>
+            <li class="nav__item">
+              <a href="./team.html" class="nav__link link">Наша команда</a>
+            </li>
+
+
+            <li class="nav__item">
+              <a href="./paidServices.html" class="nav__link link">Платні послуги</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="./paidServices.html" class="nav__link link">Новини</a>
+            </li>
+
+
+
+
+
+          </ul>
+        </nav>
+        <ul class="contacts-header list">
+
+          <li class="contacts-header__item">
+            <a href="tel:+380961111111" class="contacts-header__link link">
+              <svg class="contacts-header__icon" width="10" height="16">
+                <use href="./images/icon.svg#icon-smartphone"></use>
+              </svg>
+              045-63-5-36-74</a>
+          </li>
+          <li class="contacts-header__item">
+            <a href="mailto:info@devstudio.com" class="contacts-header__link link">
+              <svg class="contacts-header__icon" width="16" height="12">
+                <use href="./images/icon.svg#icon-envelope"></use>
+              </svg>
+              knpkor_kodl2@ukr.net</a>
+          </li>
+        </ul>
+        <ul class="social-burger list">
+
+          <li class="social-burger__item">
+            <svg width="10px" height="10px">
+              <use href="./images/icon.svg#icon-instagram" style="fill: #757575"></use>
+            </svg>
+            <a href="" class="social-burger__link link">Instagram</a>
+          </li>
+          <li class="social-burger__item">
+            <svg width="10px" height="10px">
+              <use href="./images/icon.svg#icon-twitter" style="fill: #757575"></use>
+            </svg>
+            <a href="" class="social-burger__link link">Twitter</a>
+          </li>
+          <li class="social-burger__item">
+            <svg width="10px" height="10px">
+              <use href="./images/icon.svg#icon-facebook" style="fill: #757575"></use>
+            </svg>
+            <a href="" class="social-burger__link link">Facebook</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- головна сторінка -->
+  <main class="main">
+    <section class="hero">
+      <div class="hero__wrap">
+        <h1 class="hero__title">Територія здорового дитинства</h1>
+
+      </div>
+    </section>
+
+
+
+
+    <section class="departmens">
+      <div class="container">
+        <h2 class="departmens__title">Відділення закладу</h2>
+        <div class="swiper sample-slider ">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/pruimalne.jpg">
+              <div class="title"><a class="link-board" href="./team.html">Приймальне відділення</a></div>
+            </div>
+
+            <div class="swiper-slide"><img src="./images/pediatriya.jpg">
+              <div class="title"><a class="link-board" href="./team.html">Ⅰ педіатричне відділення </a></div>
+            </div>
+
+            <div class="swiper-slide"><img src="./images/pediatria2.png">
+              <div class="title"><a class="link-board" href="./team.html">ⅠⅠ педіатричне відділення </a></div>
+            </div>
+
+            <div class="swiper-slide"><img src="./images/pediartia3.jpg">
+              <div class="title"><a class="link-board" href="./team.html">ⅠⅠⅠ педіатричне відділення</a></div>
+            </div>
+
+
+            <div class="swiper-slide">
+              <img src="./images/detskaya-khirurgiya.jpg">
+
+              <div class="title">
+                <a href="./team.html" class="link-board">Хірургічне відділення </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide"><img src="./images/reanimatsiya.jpg">
+              <div class="title"><a class="link-board" href="./team.html">Відділення анестезіології з ліжками
+                  інтенсивної терапії</a></div>
+
+            </div>
+
+
+
+
+
+            <div class="swiper-slide"><img src="./images/patologia.jpg">
+              <div class="title"><a class="link-board" href="./team.html">Відділення патології новонароджених та
+                  недоношених новонароджених</a></div>
+
+            </div>
+
+
+
+            <div class="swiper-slide"><img src="./images/travmpunkt.jpg">
+              <div class="title"><a class="link-board" href="./team.html">Цілодобовий дитячий травматологічний
+                  пункт</a></div>
+            </div>
+
+            <div class="swiper-slide"><img src="./images/laba.jpg">
+              <div class="title"><a class="link-board" href="./team.html">Клініко-діагностична лабараторія</a></div>
+            </div>
+          </div>
+
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <!-- </div> -->
+      <div class="swiper-pagination"></div>
+    </section>
+    <section>
+      <div class="comforts ">
+
+        <div class="container">
+          <h3 class="comforts__title">Зручності для батьків</h3>
+
+          <ul class="comforts__list">
+
+            <li class="comforts__item">
+              <img class="comforts__img" src="./images/comforts/bear.png" alt="bear">
+              <p class="comforts__name">Ігрові кімнати</p>
+            </li>
+
+            <li class="comforts__item">
+              <img class="comforts__img" src="./images/comforts/playgroung.png" alt="playgroung">
+              <p class="comforts__name">Дитячий майданчик</p>
+            </li>
+
+
+
+            <li class="comforts__item">
+              <img class="comforts__img" src="./images/comforts/parking.png" alt="parking">
+              <p class="comforts__name">Парковка</p>
+            </li>
+
+            <li class="comforts__item">
+              <img class="comforts__img" src="./images/comforts/credit-card.png" alt="credit-card">
+              <p class="comforts__name">Оплата картою</p>
+            </li>
+
+            <li class="comforts__item">
+              <img class="comforts__img" src="./images/comforts/invalids.png" alt="invalids">
+              <p class="comforts__name">Інклюзивність</p>
+            </li>
+
+          </ul>
+
+
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- Doctors  -->
+
+    <section class="doctors">
+
+      <div class="container">
+        <h1 class="doctors__title">Вузькі спеціалісти</h1>
+
+
+
+        <div class="image-slider swiper-container">
+          <div class="image-slider__wrapper swiper-wrapper">
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+
+                <figure class="doctors__card">
+                  <img src="https://www.tviysvit.com.ua/wp-content/uploads/2020/12/kabinet-pediatra-3.jpg"
+                    alt="sample87" />
+                  <div class="border"></div>
+                  <figcaption>
+                    <img src="https://med-magazin.ua/media/19/191534-kto-takoj-vrach-terapevt.jpg" alt="profile-sample4"
+                      class="profile" />
+                    <h2 class="doctors__specialist"> Нефролог</h2>
+                    <p class="doctors__person">Тімус Вікторія</p>
+                    <p class="doctors__review"> Привіт, я доктор [ваше ім'я], спеціалізуюсь у лікуванні і діагностиці
+                      різних захворювань. Моє
+                      завдання - надав </p>
+
+                  </figcaption>
+                </figure>
+
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+
+                <figure class="doctors__card">
+                  <img src="https://www.tviysvit.com.ua/wp-content/uploads/2020/12/kabinet-pediatra-3.jpg"
+                    alt="sample87" />
+                  <figcaption>
+                    <img src="https://medikom.ua/upload/images/4742/terapiya-kiev-7-0.jpg" alt="profile-sample4"
+                      class="profile" />
+                    <h2 class="doctors__specialist">Хірург</h2>
+                    <p class="doctors__person">Тімус Вікторія</p>
+                    <p class="doctors__review"> Привіт, я доктор [ваше ім'я], спеціалізуюсь у лікуванні і діагностиці
+                      різних захворювань. Моє
+                      завдання - надав </p>
+
+                  </figcaption>
+                </figure>
+
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+
+                <figure class="doctors__card">
+                  <img src="https://www.tviysvit.com.ua/wp-content/uploads/2020/12/kabinet-pediatra-3.jpg"
+                    alt="sample87" />
+                  <figcaption>
+                    <img
+                      src="https://daily-med.com.ua/wp-content/uploads/2022/07/500x334xportrait-doctor-1-1.jpg.pagespeed.ic_.zn3vnodome.jpg"
+                      alt="profile-sample4" class="profile" />
+                    <h2 class="doctors__specialist">Кардіолог</h2>
+                    <p class="doctors__person">Тімус Вікторія</p>
+                    <p class="doctors__review"> Привіт, я доктор [ваше ім'я], спеціалізуюсь у лікуванні і діагностиці
+                      різних захворювань. Моє
+                      завдання - надав </p>
+
+                  </figcaption>
+                </figure>
+
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+
+                <figure class="doctors__card">
+                  <img src="https://www.tviysvit.com.ua/wp-content/uploads/2020/12/kabinet-pediatra-3.jpg">
+                  <figcaption>
+                    <img src="https://www.helsa.com.ua/wp-content/uploads/2022/09/Demchuk.jpg" alt="profile-sample4"
+                      class="profile" />
+                    <h2 class="doctors__specialist">Окуліст</h2>
+                    <p class="doctors__person">Тімус Вікторія</p>
+                    <p class="doctors__review"> Привіт, я доктор [ваше ім'я], спеціалізуюсь у лікуванні і діагностиці
+                      різних захворювань. Моє
+                      завдання - надав </p>
+
+
+                  </figcaption>
+                </figure>
+
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+
+                <figure class="doctors__card">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample87.jpg" alt="sample87" />
+                  <figcaption>
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample4.jpg"
+                      alt="profile-sample4" class="profile" />
+                    <h2 class="doctors__specialist"> Нефролог</h2>
+                    <p class="doctors__person">Тімус Вікторія</p>
+                    <p class="doctors__review"> Привіт, я доктор [ваше ім'я], спеціалізуюсь у лікуванні і діагностиці
+                      різних захворювань. Моє
+                      завдання - надав </p>
+
+
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__image">
+
+                <figure class="doctors__card">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample87.jpg" alt="sample87" />
+                  <figcaption>
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample4.jpg"
+                      alt="profile-sample4" class="profile" />
+                    <h2 class="doctors__specialist"> Нефролог</h2>
+                    <p class="doctors__person">Тімус Вікторія</p>
+                    <p class="doctors__review"> Привіт, я доктор [ваше ім'я], спеціалізуюсь у лікуванні і діагностиці
+                      різних захворювань. Моє
+                      завдання - надав </p>
+
+
+                  </figcaption>
+                </figure>
+
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+
+          <div class="swiper-scrollbar"></div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section class="news">
+
+
+      <div class="container">
+        <h1 class="news__name">Новини</h1>
+        <div class="wrapper">
+          <div class="background">
+            <!-- <img
+              src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1537132206/news-slider/background.webp"
+              alt=""> -->
+          </div>
+          <div class="item-bg"></div>
+
+          <div class="news-slider">
+            <div class="news-slider__wrp swiper-wrapper">
+              <div class="news-slider__item swiper-slide">
+                <a href="#" class="news__item">
+                  <div class="news-date">
+                    <span class="news-date__title">24</span>
+                    <span class="news-date__txt">May</span>
+                  </div>
+                  <div class="news__name">
+                    Lorem Ipsum Dolor Sit Amed
+                  </div>
+
+                  <p class="news__txt">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s...
+                  </p>
+
+                  <div class="news__img">
+                    <img
+                      src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1537132205/news-slider/item-2.webp"
+                      alt="news">
+                  </div>
+                </a>
+              </div>
+
+              <div class="news-slider__item swiper-slide">
+                <a href="#" class="news__item">
+                  <div class="news-date">
+                    <span class="news-date__title">25</span>
+                    <span class="news-date__txt">May</span>
+                  </div>
+                  <div class="news__name">
+                    Lorem Ipsum Dolor Sit Amed
+                  </div>
+
+                  <p class="news__txt">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s...
+                  </p>
+
+                  <div class="news__img">
+                    <img
+                      src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1537132205/news-slider/item-3.webp"
+                      alt="news">
+                  </div>
+                </a>
+              </div>
+
+              <div class="news-slider__item swiper-slide">
+                <a href="#" class="news__item">
+                  <div class="news-date">
+                    <span class="news-date__title">26</span>
+                    <span class="news-date__txt">May</span>
+                  </div>
+                  <div class="news__name">
+                    Lorem Ipsum Dolor Sit Amed
+                  </div>
+
+                  <p class="news__txt">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s...
+                  </p>
+
+                  <div class="news__img">
+                    <img
+                      src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1537132205/news-slider/item-4.webp"
+                      alt="news">
+                  </div>
+                </a>
+              </div>
+
+              <div class="news-slider__item swiper-slide">
+                <a href="#" class="news__item">
+                  <div class="news-date">
+                    <span class="news-date__title">27</span>
+                    <span class="news-date__txt">May</span>
+                  </div>
+                  <div class="news__name">
+                    Lorem Ipsum Dolor Sit Amed
+                  </div>
+
+                  <p class="news__txt">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s...
+                  </p>
+
+                  <div class="news__img">
+                    <img
+                      src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1537132205/news-slider/item-2.webp"
+                      alt="news">
+                  </div>
+                </a>
+              </div>
+
+              <div class="news-slider__item swiper-slide">
+                <a href="#" class="news__item">
+                  <div class="news-date">
+                    <span class="news-date__title">28</span>
+                    <span class="news-date__txt">May</span>
+                  </div>
+                  <div class="news__name">
+                    Lorem Ipsum Dolor Sit Amed
+                  </div>
+
+                  <p class="news__txt">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s...
+                  </p>
+
+                  <div class="news__img">
+                    <img
+                      src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1537132205/news-slider/item-5.webp"
+                      alt="news">
+                  </div>
+                </a>
+              </div>
+
+              <div class="news-slider__item swiper-slide">
+                <a href="#" class="news__item">
+                  <div class="news-date">
+                    <span class="news-date__title">29</span>
+                    <span class="news-date__txt">May</span>
+                  </div>
+                  <div class="news__name">
+                    Lorem Ipsum Dolor Sit Amed
+                  </div>
+
+                  <p class="news__txt">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s...
+                  </p>
+
+                  <div class="news__img">
+                    <img
+                      src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1537132205/news-slider/item-4.webp"
+                      alt="news">
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="news-slider__ctr">
+
+              <div class="news-slider__arrows">
+                <button class="news-slider__arrow news-slider-prev">
+                  <span class="icon-font">
+                    <svg class="icon icon-arrow-left">
+                      <use xlink:href="#icon-arrow-left"></use>
+                    </svg>
+                  </span>
+                </button>
+                <button class="news-slider__arrow news-slider-next">
+                  <span class="icon-font">
+                    <svg class="icon icon-arrow-right">
+                      <use xlink:href="#icon-arrow-right"></use>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+
+              <div class="news-slider__pagination"></div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <svg hidden="hidden">
+          <defs>
+            <symbol id="icon-arrow-left" viewBox="0 0 32 32">
+              <title>arrow-left</title>
+              <path
+                d="M0.704 17.696l9.856 9.856c0.896 0.896 2.432 0.896 3.328 0s0.896-2.432 0-3.328l-5.792-5.856h21.568c1.312 0 2.368-1.056 2.368-2.368s-1.056-2.368-2.368-2.368h-21.568l5.824-5.824c0.896-0.896 0.896-2.432 0-3.328-0.48-0.48-1.088-0.704-1.696-0.704s-1.216 0.224-1.696 0.704l-9.824 9.824c-0.448 0.448-0.704 1.056-0.704 1.696s0.224 1.248 0.704 1.696z">
+              </path>
+            </symbol>
+            <symbol id="icon-arrow-right" viewBox="0 0 32 32">
+              <title>arrow-right</title>
+              <path
+                d="M31.296 14.336l-9.888-9.888c-0.896-0.896-2.432-0.896-3.328 0s-0.896 2.432 0 3.328l5.824 5.856h-21.536c-1.312 0-2.368 1.056-2.368 2.368s1.056 2.368 2.368 2.368h21.568l-5.856 5.824c-0.896 0.896-0.896 2.432 0 3.328 0.48 0.48 1.088 0.704 1.696 0.704s1.216-0.224 1.696-0.704l9.824-9.824c0.448-0.448 0.704-1.056 0.704-1.696s-0.224-1.248-0.704-1.664z">
+              </path>
+            </symbol>
+          </defs>
+        </svg>
+
+
+
+
+
+        <!-- Add Pagination -->
+
+      </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- <script src="./js/modal.js" ></script> -->
+
+    <script src="./js/menu.js" type="module"></script>
+    <script src="./js/departmensSlider.js" type="module"></script>
+    <script src="./js/doctorsSlider.js" type="module"></script>
+    <script src="./js/newsSlider.js" type="module"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+
+</html>

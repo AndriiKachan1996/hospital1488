@@ -1,0 +1,32 @@
+<svg viewBox="-7.36 -7.36 46.72 46.72" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+    <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)">
+        <rect x="-7.36" y="-7.36" width="46.72" height="46.72" rx="23.36" fill="#00a3a4" strokewidth="0"></rect>
+    </g>
+    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.064">
+    </g>
+    <g id="SVGRepo_iconCarrier">
+        <defs>
+            <style>
+                .cls-1 {
+                    fill: none;
+                    stroke: #ffffff;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 1.28;
+                }
+            </style>
+        </defs>
+        <title></title>
+        <g data-name="Layer 2" id="Layer_2">
+            <rect class="cls-1" height="24" width="10" x="4" y="7"></rect>
+            <path class="cls-1" d="M6,1h6a4,4,0,0,1,4,4V7a0,0,0,0,1,0,0H2A0,0,0,0,1,2,7V5A4,4,0,0,1,6,1Z"></path>
+            <line class="cls-1" x1="4" x2="14" y1="19" y2="19"></line>
+            <rect class="cls-1" height="6" width="4" x="7" y="10"></rect>
+            <line class="cls-1" x1="4" x2="14" y1="27" y2="27"></line>
+            <line class="cls-1" x1="4" x2="14" y1="23" y2="23"></line>
+            <polyline class="cls-1" points="12 19 18 19 28 31 31 31"></polyline>
+            <line class="cls-1" x1="18" x2="18" y1="20" y2="31"></line>
+            <line class="cls-1" x1="23" x2="23" y1="25" y2="31"></line>
+        </g>
+    </g>
+</svg>

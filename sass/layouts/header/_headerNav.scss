@@ -1,0 +1,79 @@
+.nav {
+	@include tablet {
+		display: flex;
+		align-items: center;
+	}
+
+	&__list {
+		@include tablet {
+			display: flex;
+			height: 100%;
+		}
+	}
+}
+
+.nav__item {
+	@include mobileMax {
+		&:not(:last-child) {
+			margin-bottom: 32px;
+		}
+	}
+
+	@include tablet {
+		display: flex;
+
+		&:not(:last-child) {
+			margin-right: 28px;
+		}
+	}
+
+}
+
+.nav__link {
+
+	@include desktop{
+	@include font(20px, 500, 1.2, 0.02em);
+		
+	}
+	&:hover,
+	&:focus {
+		color: #26c0b4;
+	}
+
+	&--current {
+		color: #26c0b4;
+	}
+	@include font(16px, 500, 1.2, 0.02em);
+	font-family: "Raleway", sans-serif;
+
+	position: relative;
+	padding-bottom: 5px;
+	text-decoration: none;
+
+	transition: color $duration $timing-function;
+
+	@include tablet {
+		@include font(12px, 500, 1.1, 0.02em);
+		padding: 32px 0;
+		@include desktop {
+			@include font(16px, 500, 1.1, 0.02em);
+		}
+	}
+
+	position: relative;
+	text-decoration: none;
+	color: inherit;
+	color: #166c65;
+
+	&--current::after {
+		content: "";
+		position: absolute;
+		bottom: -1px;
+		display: block;
+		width: 100%;
+		height: 4px;
+		background-color: #26c0b4;
+
+		border-radius: 2px;
+	}
+}

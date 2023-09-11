@@ -1,0 +1,99 @@
+.comforts {
+
+    background: linear-gradient(3deg, #026667, #26c0b4);
+
+    &__title {
+
+        color: white;
+
+        @include font(28px, 700, 1.2, 0.03em);
+		font-family: "Neucha";
+		padding: 35px 0;
+
+		@include tablet{
+		text-align: center;
+		padding: 35px 0;
+		@include font(38px, 600, 1.8, 0.07em);
+
+		@include desktop{
+		@include font(42px, 900, 1.8, 0.07em);
+
+		}
+		}
+    }
+
+
+
+    &__list{
+        
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 50px 0 50px;
+   
+    }
+
+    &__item{
+
+       
+
+        width: calc(100% / 6); 
+        margin: 5px; 
+        border-radius:    50%;
+
+
+        @include tablet{
+            width: calc(100% / 6 - 30px);
+            margin: 15px;
+        }
+
+        @include desktop{
+            width: calc(100% / 6 - 60px);
+            margin: 30px;
+            
+
+
+        }
+
+        transition: transform 0.3s ease;
+
+        &:hover,
+        &:focus {
+            transform: scale(1.1);
+        }
+
+    }
+
+    &__name{
+
+
+        @include font(12px, 700, 1.2, 0.03em);
+        color: white;
+        font-family: "Neucha";
+		padding: 5px 0;
+        text-align: center;
+
+        @include tablet {
+        @include font(15px, 700, 1.2, 0.03em);
+
+        @include desktop {
+            @include font(20px, 700, 1.2, 0.03em);
+
+        }
+
+        }
+
+    }
+    &__img{
+        width: 100%;
+        border-radius: 50%;
+        border : 3.5px solid #f58726;
+
+     
+        
+
+    }
+}
+

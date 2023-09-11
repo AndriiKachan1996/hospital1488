@@ -1,0 +1,122 @@
+.swiper {
+	box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 
+		0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+		@include desktop {
+			width: 100%;
+		}
+		
+}
+
+
+.sample-slider img {
+	width: 100%;
+	height: 320px;
+	display: block;
+
+	@include tablet {
+	height: 500px;
+
+	}
+
+	@include desktop {
+	height: 650px;
+
+	}
+}
+
+
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+	font-family: swiper-icons;
+	font-size: 15px;
+	text-transform: none !important;
+	letter-spacing: 0;
+	font-variant: initial;
+	line-height: 1;
+	color: #166c65;
+
+	// z-index: 11;
+    // background: #fefefe;
+    // border: none;
+    // border-radius: 8px;
+    // justify-content: center;
+    // align-items: center;
+    // display: flex;
+    // position: absolute;
+    // right: 5px;
+	// left: 1px;
+    // box-shadow: 0 4px 4px rgba(0,0,0,.06);
+
+
+	@include tablet {
+		font-size: 25px;
+	}
+}
+.swiper-pagination {
+	position: static;
+	padding: 10px;
+}
+
+.swiper-pagination-bullet-active {
+	background: #166c65;
+
+}
+
+
+.title {
+
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	bottom: -31px;
+	width: 100%;
+	height: 45px;
+
+	color: white;
+	background-color: rgba(47, 48, 58, 0.8);
+
+	@include tablet{
+		height: 90px;
+	}
+	@include desktop {
+		bottom: -51px;
+	}
+}
+
+.link-board{
+	@include font(18px, 700, 1.2, 0.03em);
+	text-decoration: none;
+	color: white;
+	font-family: "Neucha";
+    cursor: pointer;
+	
+	@include tablet{
+	@include font(35px, 700, 1.2, 0.03em);
+
+	}
+
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+	padding-top: 25px;
+	padding-bottom: 35px;
+
+	@include tablet{
+	padding-bottom: 55px;
+	padding-top: 25px;
+
+
+	}
+}
+
+.link-board{
+    padding: 10px 10px;
+
+	 @include tablet{
+    padding: 20px 10px;
+
+
+	 }
+}
