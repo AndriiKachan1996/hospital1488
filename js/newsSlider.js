@@ -17,9 +17,9 @@ if (window.innerWidth > 800) {
             $('.item-bg').addClass('active');
             $('.news__item').removeClass('active');
 
-            bg.style.width = `${width}px`;
-            bg.style.height = `${height}px`;
-            bg.style.transform = `translateX(${x}px) translateY(${y}px)`;
+            // bg.style.width = `${width}px`;
+            // bg.style.height = `${height}px`;
+            // bg.style.transform = `translateX(${x}px) translateY(${y}px)`;
         }
     });
 
@@ -97,10 +97,10 @@ swiper.on('slideChangeTransitionEnd', () => {
 
     $('.swiper-slide-active .news__item').addClass('active');
 
-    const x = sliderItem.getBoundingClientRect().left;
-    const y = sliderItem.getBoundingClientRect().top;
-    const width = sliderItem.getBoundingClientRect().width;
-    const height = sliderItem.getBoundingClientRect().height;
+    // const x = sliderItem.getBoundingClientRect().left;
+    // const y = sliderItem.getBoundingClientRect().top;
+    // const width = sliderItem.getBoundingClientRect().width;
+    // const height = sliderItem.getBoundingClientRect().height;
 
     $('.item-bg').addClass('active');
 

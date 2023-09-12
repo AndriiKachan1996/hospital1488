@@ -3,7 +3,7 @@
 
 	&__title {
 		@include font(28px, 700, 1.2, 0.03em);
-		font-family: "Neucha";
+		font-family: "Alegreya";
 		background-image: linear-gradient(to left, #26c0b4, #166c65);
 		color: transparent;
 		background-clip: text;
@@ -15,7 +15,7 @@
 		padding: 35px 0;
 		@include font(38px, 600, 1.8, 0.07em);
 		@include desktop{
-		@include font(42px, 900, 1.8, 0.07em);
+		@include font(48px, 900, 1.8, 0.07em);
 
 		}
 		}

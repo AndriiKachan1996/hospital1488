@@ -718,7 +718,7 @@ body {
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  font-family: "Neucha";
+  font-family: "Alegreya";
   background-image: -webkit-gradient(linear, right top, left top, from(#26c0b4), to(#166c65));
   background-image: linear-gradient(to left, #26c0b4, #166c65);
   color: transparent;
@@ -738,7 +738,7 @@ body {
 }
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .departmens__title {
-    font-size: 42px;
+    font-size: 48px;
     font-weight: 900;
     line-height: 1.8;
     letter-spacing: 0.07em;
@@ -746,7 +746,10 @@ body {
 }
 
 .comforts {
-  background: linear-gradient(3deg, #026667, #26c0b4);
+  background-image: url(..//..//..//images/10802.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .comforts__title {
   color: white;
@@ -754,7 +757,7 @@ body {
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  font-family: "Neucha";
+  font-family: "Alegreya";
   padding: 35px 0;
 }
 @media screen and (min-width: 768px) {
@@ -769,7 +772,7 @@ body {
 }
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .comforts__title {
-    font-size: 42px;
+    font-size: 48px;
     font-weight: 900;
     line-height: 1.8;
     letter-spacing: 0.07em;
@@ -849,7 +852,7 @@ body {
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  font-family: "Neucha";
+  font-family: "Alegreya";
   background-image: -webkit-gradient(linear, right top, left top, from(#26c0b4), to(#166c65));
   background-image: linear-gradient(to left, #26c0b4, #166c65);
   color: transparent;
@@ -869,7 +872,7 @@ body {
 }
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .doctors__title {
-    font-size: 42px;
+    font-size: 48px;
     font-weight: 900;
     line-height: 1.8;
     letter-spacing: 0.07em;
@@ -1088,29 +1091,28 @@ body {
   z-index: 50;
   height: 5px;
   width: 100%;
-  margin-top: 20px;
+  margin: 20px 0 30px 0;
 }
 
 .news {
+  background-image: url(..//..//..//images/10802.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   overflow-x: hidden !important;
-  background-color: teal;
 }
-.news__name {
+.news__titleName {
   font-size: 28px;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  font-family: "Neucha";
-  background-image: -webkit-gradient(linear, right top, left top, from(#26c0b4), to(#166c65));
-  background-image: linear-gradient(to left, #26c0b4, #166c65);
-  color: transparent;
-  -webkit-background-clip: text;
-          background-clip: text;
+  font-weight: 600;
+  line-height: 1.8;
+  letter-spacing: 0.07em;
+  color: #fff;
+  font-family: "Alegreya";
   padding: 35px 0;
 }
 @media screen and (min-width: 768px) {
-  .news__name {
+  .news__titleName {
     text-align: center;
     padding: 35px 0;
     font-size: 38px;
@@ -1120,8 +1122,8 @@ body {
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1200px) {
-  .news__name {
-    font-size: 42px;
+  .news__titleName {
+    font-size: 48px;
     font-weight: 900;
     line-height: 1.8;
     letter-spacing: 0.07em;
@@ -1141,13 +1143,6 @@ a, a:hover {
   fill: currentColor;
 }
 
-.background {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-}
 .background img {
   width: 100%;
   height: 100%;
@@ -1173,23 +1168,18 @@ a, a:hover {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   left: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
-
 .news-slider {
   z-index: 2;
-  max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 60px;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
   .news-slider {
-    max-width: 1000px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .news-slider {
-    margin-top: 45px;
+    max-width: 1200px;
   }
 }
 .news-slider__wrp {
@@ -1206,6 +1196,10 @@ a, a:hover {
   width: 400px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  margin: 15px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  border-radius: 50px;
 }
 @media screen and (max-width: 992px) {
   .news-slider__item {
@@ -1299,46 +1293,23 @@ a, a:hover {
 .news__item {
   padding: 40px;
   color: #fff;
-  border-radius: 10px;
+  border-radius: 50px;
   display: block;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-@media screen and (min-width: 800px) {
-  .news__item:hover {
-    color: #222222;
-    -webkit-transition-delay: 0.1s;
-            transition-delay: 0.1s;
-  }
-  .news__item:hover .news-date, .news__item:hover .news__name, .news__item:hover .news__txt {
-    opacity: 1;
-    -webkit-transition-delay: 0.1s;
-            transition-delay: 0.1s;
-  }
-  .news__item:hover .news__img {
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-}
-.news__item.active {
+.news__item:hover, .news__item:focus {
   color: #222222;
+  scale: 1.02;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  background: #fff;
+  -webkit-box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
 }
-.news__item.active .news-date, .news__item.active .news__name, .news__item.active .news__txt {
-  opacity: 1;
-}
-.news__item.active .news__img {
+.news__item:hover .news__img, .news__item:focus .news__img {
   -webkit-box-shadow: none;
           box-shadow: none;
-}
-@media screen and (max-width: 992px) {
-  .news__item {
-    padding: 30px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .news__item {
-    padding: 20px;
-  }
 }
 .news-date {
   padding-bottom: 20px;
@@ -1421,6 +1392,33 @@ a, a:hover {
   border-radius: 10px;
   height: 100%;
   width: 100%;
+}
+
+.news__name {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  font-family: "Standard";
+  overflow: auto;
+}
+
+.news-date__title, .news-date__txt {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  font-family: "Standard";
+}
+
+.news__txt {
+  height: 90px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  font-family: "Alegreya";
+  overflow: hidden;
 }
 
 .modal {

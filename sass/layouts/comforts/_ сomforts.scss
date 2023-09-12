@@ -1,13 +1,17 @@
 .comforts {
 
-    background: linear-gradient(3deg, #026667, #26c0b4);
+    // background: linear-gradient(3deg, #026667, #26c0b4);
+    background-image: url(..//..//..//images/10802.jpg);
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 
     &__title {
 
         color: white;
 
         @include font(28px, 700, 1.2, 0.03em);
-		font-family: "Neucha";
+		font-family: "Alegreya";
 		padding: 35px 0;
 
 		@include tablet{
@@ -16,7 +20,7 @@
 		@include font(38px, 600, 1.8, 0.07em);
 
 		@include desktop{
-		@include font(42px, 900, 1.8, 0.07em);
+		@include font(48px, 900, 1.8, 0.07em);
 
 		}
 		}
