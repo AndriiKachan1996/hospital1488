@@ -236,8 +236,7 @@ a, a:hover {
     transition: all .3s;
 
     
-      &:hover,
-      &:focus {
+      &:hover{
         color: #222222;
         scale: 1.02;
         transition-delay: .1s;

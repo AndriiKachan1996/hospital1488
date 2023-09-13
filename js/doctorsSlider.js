@@ -70,9 +70,9 @@ let myImageSlider = new Swiper(".image-slider", {
         },
     
         1200: {
-        spaceBetween: 10,
+        // spaceBetween: 10,
 
-        slidesPerView: 4,
+        slidesPerView: 3.5,
         centeredSlides: false,
         slidesPerGroup: 1,
     

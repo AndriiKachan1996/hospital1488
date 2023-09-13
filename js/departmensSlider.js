@@ -1,6 +1,6 @@
 const swiper = new Swiper(".sample-slider", {
 	loop: true,
-	effect: "fade",
+	effect: "slide",
 
 	pagination: {
 		el: ".swiper-pagination",

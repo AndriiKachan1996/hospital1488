@@ -1298,7 +1298,7 @@ a, a:hover {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.news__item:hover, .news__item:focus {
+.news__item:hover {
   color: #222222;
   scale: 1.02;
   -webkit-transition-delay: 0.1s;
@@ -1307,7 +1307,7 @@ a, a:hover {
   -webkit-box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
           box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
 }
-.news__item:hover .news__img, .news__item:focus .news__img {
+.news__item:hover .news__img {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
