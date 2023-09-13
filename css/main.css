@@ -1308,10 +1308,6 @@ a, a:hover {
     -webkit-box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
             box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
   }
-  .news__item .news__img {
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
 }
 .news-date {
   padding-bottom: 20px;
