@@ -76,6 +76,7 @@
     border: 3.5px solid #f58726; 
     display: inline-block;
     height: 75px;
+  
 
     @include tablet { 
 
@@ -119,3 +120,15 @@
     }
 }
 
+// .icon-wpap{ 
+//     transition: transform .3s ease;
+//     transform-origin: center;
+
+//      &:hover
+//    {
+
+//     //    transform: rotateY(180deg);
+//        transform: rotateX(180deg)
+
+//     }
+// }
