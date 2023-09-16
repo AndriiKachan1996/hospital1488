@@ -72,10 +72,10 @@
 
     &__icon{
     width: 100%;
-    border-radius: 50%; 
-    border: 3.5px solid #f58726; 
+    // border-radius: 50%; 
+    // border: 3.5px solid #f58726; 
     display: inline-block;
-    height: 75px;
+    height: 70px;
   
 
     @include tablet { 
@@ -94,6 +94,11 @@
 
         @include font(12px, 700, 1.2, 0.03em);
         color: white;
+        text-shadow: 2px 0 2px #166c65, 
+				0 2px 2px #166c65, 
+				-2px 0 2px #166c65, 
+				0 -2px 2px #166c65;
+
         font-family: "Neucha";
 		padding: 5px 0;
         text-align: center;
