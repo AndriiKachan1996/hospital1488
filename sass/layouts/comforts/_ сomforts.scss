@@ -70,6 +70,24 @@
 
     }
 
+    &__icon{
+    width: 100%;
+    border-radius: 50%; 
+    border: 3.5px solid #f58726; 
+    display: inline-block;
+    height: 75px;
+
+    @include tablet { 
+
+    height: 93px;
+
+    }
+    @include desktop { 
+    height: 135px;
+
+    }
+    }
+
     &__name{
 
 
