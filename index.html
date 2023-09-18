@@ -679,6 +679,44 @@
         </ul>
 
 
+        <div class="card-grid">
+          <!-- <div id="card-left" class="card">
+            <div class="card-face card-face__front-content">
+              <h4>rotate card <i>left</i> along xy-axis</h4>
+              <button class="btn" parent-id="card-left" toggle-class='card__rotate-left'>Flip Card</button>
+            </div>
+            <div class="card-face card-face__back-content card-face__rotate-left">
+              <div>
+                <p>In order to achieve horizontal animation we need to set transform-origin and add translateX(-100%) to
+                  transfrom:
+                <p>
+                  <code>
+                  transform-origin: center right;
+                </code>
+                  <code>
+                  transform: translateX(-100%) rotateY(-180deg);
+                </code>
+                <p>Note, the order of transform is important.</p>
+              </div>
+
+              <button class="btn" parent-id="card-left" toggle-class='card__rotate-left'>Flip Card</button>
+            </div>
+          </div> -->
+
+          <div id="card-right" class="card">
+            <div class="card-face card-face__front-content">
+              <h4>rotate card <i>right</i> along xy-axis</h4>
+              <button class="btn" parent-id="card-right" toggle-class='card__rotate-right'>Flip Card</button>
+            </div>
+            <div class="card-face card-face__right card-face__back-content card-face__rotate-right">
+              <p>In order to flip the card right, we simple inverse rotateY:</p>
+              <code>
+                transform: translateX(-100%) rotateY(180deg);
+              </code>
+              <button class="btn" parent-id="card-right" toggle-class='card__rotate-right'>Flip Card</button>
+            </div>
+          </div>
+        </div>
 
     </section>
 
@@ -691,6 +729,8 @@
     <script src="./js/departmensSlider.js" type="module"></script>
     <script src="./js/doctorsSlider.js" type="module"></script>
     <script src="./js/newsSlider.js" type="module"></script>
+    <script src="./js/vacancyCard.js" type="module"></script>
+
 
 
 

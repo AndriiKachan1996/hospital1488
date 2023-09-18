@@ -108,3 +108,5 @@ swiper.on('slideChangeTransitionEnd', () => {
     // bg.style.height = `${height}px`;
     // bg.style.transform = `translateX(${x}px) translateY(${y}px)`;
 });
+
+
