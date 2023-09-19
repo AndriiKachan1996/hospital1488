@@ -1,0 +1,72 @@
+.fonds {
+
+	background-image: url(..//..//..//images/10802.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	padding: 40px 0;
+
+	&__title {
+		@include font(28px, 700, 1.2, 0.03em);
+		font-family: "Alegreya";
+
+		color: white;
+		background-clip: text;
+
+		margin-bottom: 40px;
+
+
+
+
+		@include tablet {
+			text-align: center;
+			// padding: 35px 0;
+			@include font(38px, 600, 1.8, 0.07em);
+
+			@include desktop {
+				@include font(48px, 900, 1.8, 0.07em);
+
+			}
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+		list-style: none;
+	}
+
+	&__item {
+
+		border-radius: 10px;
+
+		box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+
+		// border: 1px solid green;
+
+		flex-basis: calc((100% - 60px) / 3);
+
+		@include desktop {
+			flex-basis: calc((100% - 150px) / 6);
+		}
+
+		transition: transform 0.3s ease;
+
+		&:hover,
+		&:focus {
+			transform: scale(1.1);
+		}
+
+	}
+
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 10px;
+	}
+
+	&__link {}
+}

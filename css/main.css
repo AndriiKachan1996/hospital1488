@@ -13,6 +13,7 @@ ul {
 
 ul {
   padding-left: 0;
+  list-style: none;
 }
 
 body {
@@ -593,6 +594,7 @@ body {
 .swiper {
   -webkit-box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
           box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
 }
 @media screen and (min-width: 1200px) {
   .swiper {
@@ -896,6 +898,7 @@ body {
 
 /*     КАРТКИ     */
 .doctors__card {
+  overflow-x: scroll;
   position: relative;
   overflow: hidden;
   margin: 0.5px;
@@ -1479,17 +1482,19 @@ a, a:hover {
   list-style: none;
 }
 .vacancy__item {
+  -ms-flex-preferred-size: calc((100% - 40px) / 2);
+      flex-basis: calc((100% - 40px) / 2);
   background: #fff;
   -webkit-box-shadow: 0 8px 30px -7px #c9dff0;
           box-shadow: 0 8px 30px -7px #c9dff0;
   border-radius: 20px;
   border: 0;
-  padding: 30px;
+  padding: 10px;
 }
 @media screen and (min-width: 1200px) {
   .vacancy__item {
-    -ms-flex-preferred-size: calc((100% - 40px) / 2);
-        flex-basis: calc((100% - 40px) / 2);
+    -ms-flex-preferred-size: calc((100% - 80px) / 4);
+        flex-basis: calc((100% - 80px) / 4);
   }
 }
 .vacancy__item h5 {
@@ -1517,115 +1522,78 @@ a, a:hover {
           box-shadow: 0 8px 20px -4px #95abbb;
   width: 100px;
 }
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 275px);
-  grid-auto-rows: 275px;
-  grid-gap: 40px;
-  padding: 20px;
-  -webkit-perspective: 1500px;
-          perspective: 1500px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.fonds {
+  background-image: url(..//..//..//images/10802.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 0;
 }
-
-.card {
-  position: relative;
+.fonds__title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  font-family: "Alegreya";
+  color: white;
+  -webkit-background-clip: text;
+          background-clip: text;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .fonds__title {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 1.8;
+    letter-spacing: 0.07em;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .fonds__title {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.8;
+    letter-spacing: 0.07em;
+  }
+}
+.fonds__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+}
+.fonds__item {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+  -ms-flex-preferred-size: calc((100% - 60px) / 3);
+      flex-basis: calc((100% - 60px) / 3);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+@media screen and (min-width: 1200px) {
+  .fonds__item {
+    -ms-flex-preferred-size: calc((100% - 150px) / 6);
+        flex-basis: calc((100% - 150px) / 6);
+  }
+}
+.fonds__item:hover, .fonds__item:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.fonds__img {
   width: 100%;
   height: 100%;
-  background: whitesmoke;
-  border: 3px solid #fff;
-  border-radius: 5px;
-  color: #222;
-  font-size: 24px;
-  font: Helvetica, Arial, Sans-serif;
-  padding: 5px;
-  -webkit-box-shadow: 0 0 5px rgb(245, 245, 245);
-          box-shadow: 0 0 5px rgb(245, 245, 245);
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
 }
-.card__rotate-left {
-  -webkit-transform: translateX(100%) rotateY(-180deg);
-          transform: translateX(100%) rotateY(-180deg);
-}
-.card__rotate-right {
-  -webkit-transform: translateX(100%) rotateY(180deg);
-          transform: translateX(100%) rotateY(180deg);
-  z-index: -1;
-}
-
-.card-face {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  overflow: auto;
-  z-index: 2;
-  /******************************************************
-   * Safari iphones works with this hack.
-   * The rotate right card is the problematic one
-   * on iPhones.  Essentially, content doesn't display.
-   ******************************************************/
-}
-.card-face__front-content {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 75% 25%;
-}
-.card-face__front-content h4 {
-  text-align: center;
-}
-.card-face__back-content {
-  display: grid;
-  grid-template-column: 1fr;
-  grid-template-rows: auto;
-  font-size: 18px;
-  line-height: 1.3;
-}
-.card-face__back-content code {
-  display: block;
-  margin: 10px 0 15px;
-}
-.card-face__back-content p {
-  margin-top: 5px;
-}
-.card-face__rotate-left {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-.card-face__rotate-right {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
-}
-
-.btn {
-  font-size: 1.5rem;
-  cursor: pointer;
-  border: none;
-  background: #28a745;
-  -webkit-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
-  color: #f1f1f1;
-  border-radius: 5px;
-  min-height: 65px;
-}
-.btn:hover {
-  background-color: #218838;
-}
-
 .modal {
   background-color: #ffffff;
   border-radius: 4px;

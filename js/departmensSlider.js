@@ -1,14 +1,14 @@
-const swiper = new Swiper(".sample-slider", {
+const swiper = new Swiper("#departmens", {
 	loop: true,
 	effect: "slide",
 
 	pagination: {
 		el: ".swiper-pagination",
 	},
-	autoplay: {
-		//auto play
-		delay: 5000,
-	},
+	// autoplay: {
+	// 	//auto play
+	// 	delay: 5000,
+	// },
 	loop: true,
 	grabCursor: true, //grab cursor
 	navigation: {
@@ -17,7 +17,7 @@ const swiper = new Swiper(".sample-slider", {
 	},
 
 	touchRatio: 1.5,
-	touchAngle: 45,
+	touchAngle: 180,
 	grabCursor: true,
 	speed: 800,
 });
