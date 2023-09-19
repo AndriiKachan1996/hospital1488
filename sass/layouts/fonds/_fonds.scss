@@ -46,10 +46,10 @@
 
 		// border: 1px solid green;
 
-		flex-basis: calc((100% - 60px) / 3);
+		flex-basis: calc((100% - 20px) / 2);
 
 		@include desktop {
-			flex-basis: calc((100% - 150px) / 6);
+			flex-basis: calc((100% - 150px) / 5);
 		}
 
 		transition: transform 0.3s ease;

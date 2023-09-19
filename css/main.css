@@ -1482,8 +1482,8 @@ a, a:hover {
   list-style: none;
 }
 .vacancy__item {
-  -ms-flex-preferred-size: calc((100% - 40px) / 2);
-      flex-basis: calc((100% - 40px) / 2);
+  -ms-flex-preferred-size: calc((100% - 20px) / 2);
+      flex-basis: calc((100% - 20px) / 2);
   background: #fff;
   -webkit-box-shadow: 0 8px 30px -7px #c9dff0;
           box-shadow: 0 8px 30px -7px #c9dff0;
@@ -1570,8 +1570,8 @@ a, a:hover {
   border-radius: 10px;
   -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
-  -ms-flex-preferred-size: calc((100% - 60px) / 3);
-      flex-basis: calc((100% - 60px) / 3);
+  -ms-flex-preferred-size: calc((100% - 20px) / 2);
+      flex-basis: calc((100% - 20px) / 2);
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
@@ -1579,8 +1579,8 @@ a, a:hover {
 }
 @media screen and (min-width: 1200px) {
   .fonds__item {
-    -ms-flex-preferred-size: calc((100% - 150px) / 6);
-        flex-basis: calc((100% - 150px) / 6);
+    -ms-flex-preferred-size: calc((100% - 150px) / 5);
+        flex-basis: calc((100% - 150px) / 5);
   }
 }
 .fonds__item:hover, .fonds__item:focus {
