@@ -1579,8 +1579,8 @@ a, a:hover {
 }
 @media screen and (min-width: 1200px) {
   .fonds__item {
-    -ms-flex-preferred-size: calc((100% - 150px) / 5);
-        flex-basis: calc((100% - 150px) / 5);
+    -ms-flex-preferred-size: calc((100% - 100px) / 6);
+        flex-basis: calc((100% - 100px) / 6);
   }
 }
 .fonds__item:hover, .fonds__item:focus {
