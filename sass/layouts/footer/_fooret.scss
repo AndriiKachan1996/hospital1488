@@ -1,0 +1,107 @@
+.footer {
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+
+
+
+    &__wrap {
+        display: flex;
+        // justify-content: space-between;
+
+        align-items: center;
+
+    }
+
+
+
+
+    &__logo {
+        box-shadow: -7px 5px 5px 0px rgba(118, 116, 116, 0.75);
+
+
+        width: 100px;
+        display: inline-block;
+        border-radius: 50%;
+
+        @include tablet {
+            width: 120px;
+            height: 100%;
+        }
+
+        @include desktop {
+            width: 180px;
+            height: 100%;
+        }
+
+
+        img {
+            // box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+
+            display: block;
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+
+
+            @include tablet {
+                width: 120px;
+
+            }
+
+            @include desktop {
+                width: 180px;
+
+            }
+        }
+
+
+    }
+
+    &__social-list {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+
+    }
+
+    &__social-item:not(:first-child) {
+        margin-left: 20px;
+
+    }
+
+    &__social-link {
+        @include size(44px, 44px);
+        box-shadow: -7px 5px 5px 0px rgba(118, 116, 116, 0.75);
+        border: 2px solid #166c65;
+        fill: #166c65;
+        display: flex;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        transition: fill $duration $timing-function,
+            background $duration $timing-function,
+            box-shadow $duration $timing-function,
+            scale $duration $timing-function;
+
+        &:hover,
+        &:focus {
+            box-shadow: rgba(0, 163, 164, 0.4) -5px 5px, rgba(0, 163, 164, 0.3) -10px 10px, rgba(0, 163, 164, 0.2) -15px 15px, rgba(0, 163, 164, 0.1) -20px 20px, rgba(0, 163, 164, 0.05) -25px 25px;
+            scale: 1.05;
+            fill: #26c0b4;
+            border: 2px solid #00a3a4;
+
+            ;
+        }
+
+
+    }
+
+
+
+
+}
