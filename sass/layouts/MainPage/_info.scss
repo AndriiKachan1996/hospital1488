@@ -1,0 +1,33 @@
+.info {
+    border: 1px solid grey;
+    padding: 35px 0;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @include tablet {
+            flex-direction: row;
+
+
+        }
+
+
+    }
+
+    &__item {
+        text-align: center;
+        border: 1px solid grey;
+        padding: 30px 0;
+
+        @include tablet {
+            flex-basis: calc((100% - 40px) / 3);
+
+        }
+    }
+
+    &__icon {
+        // fill: aqua
+    }
+}

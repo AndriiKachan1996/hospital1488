@@ -1,79 +1,86 @@
 .nav {
 	@include tablet {
 		display: flex;
-		align-items: center;
 	}
 
 	&__list {
+
 		@include tablet {
 			display: flex;
-			height: 100%;
+			flex-wrap: wrap;
+			gap: 28px;
 		}
-	}
-}
 
-.nav__item {
-	@include mobileMax {
-		&:not(:last-child) {
-			margin-bottom: 32px;
+		@include mobileMax {
+			margin-bottom: 39px;
 		}
+
 	}
 
-	@include tablet {
-		display: flex;
+	&__item {
 
-		&:not(:last-child) {
-			margin-right: 28px;
+
+		@include mobileMax {
+			&:not(:last-child) {
+				margin-bottom: 32px;
+			}
 		}
-	}
 
-}
-
-.nav__link {
-
-	@include desktop{
-	@include font(20px, 500, 1.2, 0.02em);
-		
-	}
-	&:hover,
-	&:focus {
-		color: #26c0b4;
-	}
-
-	&--current {
-		color: #26c0b4;
-	}
-	@include font(16px, 500, 1.2, 0.02em);
-	font-family: "Raleway", sans-serif;
-
-	position: relative;
-	padding-bottom: 5px;
-	text-decoration: none;
-
-	transition: color $duration $timing-function;
-
-	@include tablet {
-		@include font(12px, 500, 1.1, 0.02em);
-		padding: 32px 0;
 		@include desktop {
-			@include font(16px, 500, 1.1, 0.02em);
+			flex-basis: auto;
 		}
+
 	}
 
-	position: relative;
-	text-decoration: none;
-	color: inherit;
-	color: #166c65;
+	&__link {
+		font-family: Georgia, 'Times New Roman', Times, serif;
 
-	&--current::after {
-		content: "";
-		position: absolute;
-		bottom: -1px;
-		display: block;
-		width: 100%;
-		height: 4px;
-		background-color: #26c0b4;
+		@include desktop {
+			@include font(20px, 500, 1.2, 0.02em);
 
-		border-radius: 2px;
+		}
+
+		&:hover,
+		&:focus {
+			color: #26c0b4;
+		}
+
+		&--current {
+
+			color: #26c0b4;
+		}
+
+		@include font(16px, 500, 1.2, 0.02em);
+		position: relative;
+		padding-bottom: 10px;
+		text-decoration: none;
+		transition: color $duration $timing-function;
+
+		@include tablet {
+			@include font(14px, 500, 1.1, 0.02em);
+
+
+
+			@include desktop {
+				@include font(16px, 500, 1.1, 0.02em);
+			}
+		}
+
+		position: relative;
+		text-decoration: none;
+		color: inherit;
+		color: #166c65;
+
+		&--current::after {
+			content: "";
+			position: absolute;
+			bottom: -1px;
+			display: block;
+			width: 100%;
+			height: 4px;
+			background-color: #26c0b4;
+
+			border-radius: 2px;
+		}
 	}
 }

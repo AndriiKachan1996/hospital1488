@@ -7,69 +7,28 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 450px;
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
 
-	&__wrap {
-		padding: 0 60px 0 60px;
-
-		@include tablet {
-			padding: 118px 204px;
-		}
-
-		@include desktop {
-			padding: 200px 0;
-		}
-	}
 
 	&__title {
-		@include font(26px, 900, 1.6, 0.06em);
-
+		padding: 140px 30px;
+		@include font(20px, 600, 1.6, 0.06em);
 		text-align: center;
-
 		margin: auto;
-		font-family: "Lobster";
-
 		background-image: linear-gradient(to left, #26c0b4, #166c65);
 		color: transparent;
 		background-clip: text;
-		-webkit-background-clip: text;
+		font-family: Georgia, 'Times New Roman', Times, serif;
 
 		@include tablet {
-			@include font(44px, 900, 1.4, 0.06em);
+			padding: 240px 0;
+			@include font(24px, 600, 1.6, 0.06em);
+		}
 
-			max-width: 690px;
+		@include desktop {
+			@include font(28px, 600, 1.6, 0.06em);
+
 		}
 	}
 
-	&__button {
-		@include font(16px, 700, 1.9, 0.06em);
-
-		display: inline-block;
-		margin-top: 30px;
-		border-radius: 4px;
-		padding: 10px 24px;
-		min-width: 216px;
-		text-align: center;
-		background-color: $color-accent;
-		color: $color-white;
-		font-family: "Roboto", sans-serif;
-		cursor: pointer;
-		border: none;
-		transition: $timing-function $duration;
-		&:hover,
-		&:focus {
-			background: $color-accent-active;
-		}
-
-		@include tablet {
-			padding: 10px 32px;
-		}
-	}
-	@include tablet{
-		height: 750px;
-	}
 }

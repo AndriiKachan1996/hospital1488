@@ -5,9 +5,12 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 
-	padding: 40px 0;
+	padding: 20px 0;
 
-
+	&__logo {
+		width: 100px;
+		height: 100%
+	}
 
 	&__title {
 		@include font(28px, 700, 1.2, 0.03em);
@@ -16,7 +19,7 @@
 		color: white;
 		background-clip: text;
 
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 
 
 
@@ -48,21 +51,21 @@
 
 		// border: 1px solid green;
 
-		flex-basis: calc((100% - 20px) / 2);
+		flex-basis: calc((100% - 40px) / 3);
 
-		@include tablet {
-			flex-basis: calc((100% - 40px) / 3);
-		}
+		// @include tablet {
+		// 	flex-basis: calc((100% - 40px) / 3);
+		// }
 
 		@include desktop {
-			flex-basis: calc((100% - 100px) / 6);
+			// flex-basis: calc((100% - 100px) / 3);
 		}
 
 		transition: transform 0.3s ease;
 
 		&:hover,
 		&:focus {
-			transform: scale(1.1);
+			transform: scale(1.03);
 		}
 
 	}
@@ -74,5 +77,5 @@
 		border-radius: 10px;
 	}
 
-	&__link {}
+	// &__link {}
 }
