@@ -1,19 +1,17 @@
-.info {
+.public {
     padding: 35px 0 0 0;
 
     &__title {
-        margin-bottom: 35px;
-        display: inline-block;
-        text-transform: uppercase;
         @include font(26px, 700, 1.2, 0.03em);
+        text-transform: uppercase;
+        display: inline-block;
+        margin-bottom: 35px;
         background-image: linear-gradient(to left, #26c0b4, #166c65);
         color: transparent;
         background-clip: text;
 
         @include desktop {
             @include font(46px, 700, 1.2, 0.03em);
-
-
         }
     }
 
@@ -24,7 +22,6 @@
 
         @include tablet {
             flex-direction: row;
-
         }
     }
 
@@ -39,36 +36,29 @@
             border-color: #166c65;
         }
 
-
-
         @include mobileMax {
             box-shadow: 15px 20px 12px -15px rgba(0, 0, 0, 0.73);
-
         }
-
 
         @include tablet {
             flex-basis: calc((100% - 40px) / 3);
 
             &:hover {
                 box-shadow: 15px 20px 12px -15px rgba(0, 0, 0, 0.73);
-
-
             }
 
         }
 
         transition: box-shadow $duration $timing-function,
-        border-color $duration $timing-function
+        border-color $duration $timing-function,
     }
-
 
     &__icon {
         fill: #666666;
         transition: color $duration $timing-function,
             scale $duration $timing-function;
-        width: 65px;
-        height: 65px;
+        width: 75px;
+        height: 75px;
 
         @include tablet {
             width: 100px;
@@ -77,49 +67,32 @@
     }
 
     &__name {
-        @include font(16px, 700, 1.7, 0.03em);
-        margin-bottom: 20px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        text-transform: uppercase;
         color: #666666;
-        transition: color $duration $timing-function;
+        @include font(16px, 700, 1.2, 0.03em);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 5px 0;
+        text-align: center;
 
-        @include desktop {
-            @include font(20px, 700, 1.7, 0.03em);
+        @include tablet {
+            @include font(15px, 700, 1.2, 0.03em);
+
+            @include desktop {
+                @include font(20px, 700, 1.2, 0.03em);
+
+            }
 
         }
+
     }
-
-    &__description {
-        margin: 0;
-        @include font(16px, 600, 1.7, 0.03em);
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        text-transform: uppercase;
-        color: #666666;
-        transition: color $duration $timing-function;
-
-
-        @include desktop {
-            @include font(20px, 700, 1.7, 0.03em);
-        }
-    }
-
-
 }
 
-.info__item:hover .info__link svg {
+.public__item:hover svg {
     scale: 1.07;
     fill: #166c65;
 
 }
 
-.info__item:hover .info__description {
-    background-image: linear-gradient(to left, #26c0b4, #166c65);
-    color: transparent;
-    background-clip: text;
-}
-
-.info__item:hover .info__name {
+.public__item:hover .public__name {
     background-image: linear-gradient(to left, #26c0b4, #166c65);
     color: transparent;
     background-clip: text;

@@ -1,16 +1,15 @@
 .menegment {
-    padding: 35px 0;
-    border: 1px solid grey;
+    padding: 35px 0 0 0;
+    // border: 1px solid grey;
 
     &__title {
+        margin-bottom: 35px;
         display: inline-block;
         text-transform: uppercase;
         @include font(26px, 700, 1.2, 0.03em);
-        margin-bottom: 20px;
         background-image: linear-gradient(to left, #26c0b4, #166c65);
         color: transparent;
         background-clip: text;
-        border-bottom: 2px solid #166c65;
 
         @include desktop {
             @include font(46px, 700, 1.2, 0.03em);
@@ -29,7 +28,7 @@
     width: 100%;
     color: $light;
 
-    box-shadow: 19px 20px 39px -17px rgba(0, 0, 0, 1);
+    // box-shadow: 19px 20px 39px -17px rgba(0, 0, 0, 1);
 
 
 }

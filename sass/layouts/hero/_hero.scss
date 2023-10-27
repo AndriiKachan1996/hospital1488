@@ -1,5 +1,9 @@
 .hero {
-	background-color: $color-primary-background;
+
+	// background-image: linear-gradient(to top, #000205, #3a3d3e, #757878, #b6b9b8, #fefffc),
+	// 	url(../images/HERO.jpg);
+
+	// background-color: $color-primary-background;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
@@ -32,3 +36,9 @@
 	}
 
 }
+
+// .wrap {
+// 	background-image: linear-gradient(to top, #000205, #3a3d3e, #757878, #b6b9b8, #fefffc);
+// 	width: 100%;
+// 	height: 100%;
+// }

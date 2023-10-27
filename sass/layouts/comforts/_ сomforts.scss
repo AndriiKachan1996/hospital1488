@@ -1,128 +1,153 @@
 .comforts {
-
-    // background: linear-gradient(3deg, #026667, #26c0b4);
-    background-image: url(..//..//..//images/10802.jpg);
-    background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+    padding: 35px 0;
+    // border: 1px solid grey;
 
     &__title {
+        margin-bottom: 35px;
+        display: inline-block;
+        text-transform: uppercase;
+        @include font(26px, 700, 1.2, 0.03em);
+        background-image: linear-gradient(to left, #26c0b4, #166c65);
+        color: transparent;
+        background-clip: text;
 
-        color: white;
+        @include desktop {
+            @include font(46px, 700, 1.2, 0.03em);
 
-        @include font(28px, 700, 1.2, 0.03em);
-		font-family: "Alegreya";
-		padding: 35px 0;
 
-		@include tablet{
-		text-align: center;
-		padding: 35px 0;
-		@include font(38px, 600, 1.8, 0.07em);
-
-		@include desktop{
-		@include font(48px, 900, 1.8, 0.07em);
-
-		}
-		}
+        }
     }
 
 
 
-    &__list{
-        
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 50px 0 50px 0 50px;
-   
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+
+        @include tablet {
+            gap: 15px;
+        }
+
+        @include desktop {
+            gap: 25px;
+        }
+
+        @include tablet {
+            flex-wrap: nowrap;
+        }
     }
 
-    &__item{
+    &__box {
+        flex-basis: calc(50% - 20px);
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        transition: box-shadow $duration $timing-function;
 
-       
-
-        width: calc(100% / 6); 
-        margin: 5px; 
-        border-radius:    50%;
-
-
-        @include tablet{
-            width: calc(100% / 6 - 30px);
-            margin: 15px;
+        @include mobileMax {
+            box-shadow: 10px 15px 10px -10px rgba(0, 0, 0, 0.5);
         }
 
-        @include desktop{
-            width: calc(100% / 6 - 60px);
-            margin: 30px;
-            
 
-
+        @include tablet {
+            &:hover {
+                box-shadow: 15px 20px 12px -15px rgba(0, 0, 0, 0.73);
+            }
         }
+    }
 
+    &__item {
+        flex-basis: calc((100% - 10px) / 2);
         transition: transform 0.3s ease;
+        border: 1.5px solid #666666;
+        border-radius: 10px;
+        padding: 30px 0;
+        transition: transform $duration $timing-function;
 
-        &:hover,
-        &:focus {
-            transform: scale(1.1);
+        &:hover .comforts__overlay,
+        &:focus .comforts__overlay {
+            transform: translateY(0);
+        }
+
+        @include tablet {
+            border: 2px solid #666666;
+        }
+
+        @include desktop {
+            padding: 40px 0;
         }
 
     }
 
-    &__icon{
-    width: 100%;
-    // border-radius: 50%; 
-    // border: 3.5px solid #f58726; 
-    display: inline-block;
-    height: 70px;
-  
 
-    @include tablet { 
+    &__overlay {
+        @include size(100%, 100%);
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: #666;
+        opacity: 90%;
+        transform: translateY(100%);
+        transition: transform $duration $timing-function;
 
-    height: 93px;
+        @include tablet {
+            padding: 15px;
+        }
 
+        &--description {
+            color: aliceblue;
+            font-family: "Montserrat", Sans-serif;
+            text-align: center;
+            @include font(11px, 500, 1.2, 0.03em);
+
+            @include tablet {
+                @include font(18px, 500, 1.2, 0.03em);
+            }
+
+            @include desktop {
+                @include font(18px, 900, 1.2, 0.03em);
+            }
+
+
+        }
     }
-    @include desktop { 
-    height: 135px;
 
+    &__icon {
+        width: 100%;
+        height: 70px;
+        fill: #666666;
+
+        @include tablet {
+            height: 93px;
+        }
+
+        @include desktop {
+            height: 135px;
+
+        }
     }
-    }
 
-    &__name{
-
-
-        @include font(12px, 700, 1.2, 0.03em);
-        color: white;
-        text-shadow: 2px 0 2px #166c65, 
-				0 2px 2px #166c65, 
-				-2px 0 2px #166c65, 
-				0 -2px 2px #166c65;
-
-        font-family: "Neucha";
-		padding: 5px 0;
+    &__name {
+        color: #666666;
+        @include font(16px, 700, 1.2, 0.03em);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 5px 0;
         text-align: center;
 
         @include tablet {
-        @include font(15px, 700, 1.2, 0.03em);
+            @include font(15px, 700, 1.2, 0.03em);
 
-        @include desktop {
-            @include font(20px, 700, 1.2, 0.03em);
+            @include desktop {
+                @include font(20px, 700, 1.2, 0.03em);
+
+            }
 
         }
-
-        }
-
-    }
-    &__img{
-        width: 100%;
-        border-radius: 50%;
-        border : 3.5px solid #f58726;
-
-     
-        
 
     }
 }
-
-

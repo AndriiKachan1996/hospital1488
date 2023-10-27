@@ -26,17 +26,29 @@
 			}
 		}
 
+		@include tablet {
+			// flex-basis: calc((100% - 112px) / 4);
+
+		}
+
+
 		@include desktop {
-			flex-basis: auto;
+			// flex-basis: calc((100% - 112px) / 4);
+
 		}
 
 	}
 
 	&__link {
+
 		font-family: Georgia, 'Times New Roman', Times, serif;
 
+		@include tablet {
+			@include font(16px, 500, 1.2, 0.02em);
+		}
+
 		@include desktop {
-			@include font(20px, 500, 1.2, 0.02em);
+			@include font(18px, 500, 1.2, 0.02em);
 
 		}
 
@@ -50,26 +62,26 @@
 			color: #26c0b4;
 		}
 
-		@include font(16px, 500, 1.2, 0.02em);
+
 		position: relative;
 		padding-bottom: 10px;
 		text-decoration: none;
 		transition: color $duration $timing-function;
 
-		@include tablet {
-			@include font(14px, 500, 1.1, 0.02em);
+		// @include tablet {
+		// 	@include font(14px, 500, 1.1, 0.02em);
 
 
 
-			@include desktop {
-				@include font(16px, 500, 1.1, 0.02em);
-			}
-		}
+		// 	@include desktop {
+		// 		@include font(16px, 500, 1.1, 0.02em);
+		// 	}
+		// }
 
 		position: relative;
 		text-decoration: none;
 		color: inherit;
-		color: #166c65;
+		color: #009292;
 
 		&--current::after {
 			content: "";
