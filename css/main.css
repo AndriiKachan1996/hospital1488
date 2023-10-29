@@ -376,13 +376,16 @@ body {
   }
 }
 .nav__link {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
   font-family: Georgia, "Times New Roman", Times, serif;
   position: relative;
   padding-bottom: 10px;
   text-decoration: none;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
   text-decoration: none;
   color: inherit;
   color: #009292;
@@ -1140,6 +1143,84 @@ body {
           background-clip: text;
 }
 
+.fonds {
+  padding: 20px 0;
+}
+.fonds__logo {
+  width: 100px;
+  height: 100%;
+}
+.fonds__title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 35px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#26c0b4), to(#166c65));
+  background-image: linear-gradient(to left, #26c0b4, #166c65);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+@media screen and (min-width: 1200px) {
+  .fonds__title {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fonds__title {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 1.8;
+    letter-spacing: 0.07em;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .fonds__title {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.8;
+    letter-spacing: 0.07em;
+  }
+}
+.fonds__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  list-style: none;
+}
+.fonds__item {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.fonds__item:hover, .fonds__item:focus {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+.fonds__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
 .swiper {
   -webkit-box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
           box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
@@ -1402,6 +1483,7 @@ body {
 .comforts__overlay {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2151,77 +2233,6 @@ a, a:hover {
           box-shadow: 0 8px 20px -4px #95abbb;
   width: 100px;
 }
-.fonds {
-  background-image: url(..//..//..//images/10802.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 20px 0;
-}
-.fonds__logo {
-  width: 100px;
-  height: 100%;
-}
-.fonds__title {
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  font-family: "Alegreya";
-  color: white;
-  -webkit-background-clip: text;
-          background-clip: text;
-  margin-bottom: 20px;
-}
-@media screen and (min-width: 768px) {
-  .fonds__title {
-    text-align: center;
-    font-size: 38px;
-    font-weight: 600;
-    line-height: 1.8;
-    letter-spacing: 0.07em;
-  }
-}
-@media screen and (min-width: 768px) and (min-width: 1200px) {
-  .fonds__title {
-    font-size: 48px;
-    font-weight: 900;
-    line-height: 1.8;
-    letter-spacing: 0.07em;
-  }
-}
-.fonds__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 20px;
-  list-style: none;
-}
-.fonds__item {
-  border-radius: 10px;
-  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
-  -ms-flex-preferred-size: calc((100% - 40px) / 3);
-      flex-basis: calc((100% - 40px) / 3);
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-}
-.fonds__item:hover, .fonds__item:focus {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
-}
-.fonds__img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 10px;
-}
-
 .footer {
   border-top: 2px solid #009292;
   padding: 35px 0;

@@ -23,20 +23,166 @@ workHours.addEventListener("click", function() {
 
 
 
-const myCity = {
-
-  country: "Ukraine",
-  favorite: true
-}
 
 
-myCity['popular'] = false;
+/////////////////////////////////////////
+// Copy Obj 4 
+// const person = {
+//   name: 'Andrii',
+//   age: 26,
+//   info: {
+//     country: 'Ukraine',
+//     city: 'BC'
+//   }
+// }
 
-const cityName = null;
+// const person2 = JSON.parse(JSON.stringify(person));
+// // JSON.stringify(person) - перетворюю на строку
+// // JSON.parse(отримана строка) - перетворюємо на об
 
-myCity[cityName] = "Bila Tserkva"
+// // Робимо повноцінну копію і уберігаємся від мутації 
+// // тобто вкладені об не будуть змінюватись в ориг об
+// // на виході посилання вкладених об не зберігаються 
 
-console.log(myCity)
+// person2.age = 28;
+// person2.isAduld = false;
+// person2.info.city = 'Kiev'
+
+
+
+// console.log(person) 
+// // {
+// //   name: 'Andrii',
+// //   age: 26,
+// //   info: {
+// //     country: 'Ukraine',
+// //     city: 'BC'
+// //   }
+// // }
+// console.log(person2)
+
+// // {
+// //   name: 'Andrii',
+// //   age: 26,
+// //   info: {
+// //     country: 'Ukraine',
+// //     city: 'Kiev'
+// //   }
+// // }
+
+/////////////////////////////////////////
+// // Copy Obj 2 
+// const person = {
+//   name: 'Andrii',
+//   age: 26,
+//   info: {
+//         country: 'Ukraine',
+//         city: 'BC'
+//       }
+// }
+
+// const person2 = {...person } 
+
+// // через оператор spred (...) розпилюй старий об'єкт в новий.
+// // !!підходе, якщо немає вкладених об'єктів
+// // бо вкадені об'єкти будуть змінюваться і в оригінальному об'єкті.
+
+// person2.age = 28;
+// person2.isAduld = false;
+
+// person.info.city = 'Kiev'
+
+
+// console.log(person)
+// // name: 'Andrii',
+// // age: 26,
+// // info: {
+// //       country: 'Ukraine',
+// //       city: 'Kiev'
+// //     }
+
+// console.log(person2)
+// name: 'Andrii',
+// age: 26,
+// info: {
+//       country: 'Ukraine',
+//       city: 'kiev'
+//     }
+
+/////////////////////////////////////////
+// // Copy Obj 1 
+// const person = {
+//   name: 'Andrii',
+//   age: 26
+// }
+
+// const person2 = Object.assign({}, person); 
+// створює новий об'єкт.
+// !!підходе, якщо немає вкладенрих об'єктів
+
+// person2.age = 28;
+// person2.isAduld = false;
+
+// console.log(person.age) // 27
+// console.log(person.isAduld) // true
+
+// console.log(person2.age) // 28
+// console.log(person2.isAduld) // false 
+
+/////////////////////////////////////////
+// Copy by reference
+// const person = {
+//   name: 'Andrii',
+//   age: 26
+// }
+
+// const person2 = person;
+
+// person2.age = 27;
+// person2.isAdult = true;
+
+// console.log(person.isAdult) // true;
+// console.log(person.age) // 27;
+/////////////////////////////////////////
+// Copy by reference
+
+// const person = {
+//   name: 'Andrii',
+//   age: 26
+// }
+
+// person.age = 27;
+// person.isAdult = true;
+
+// console.log(person.isAdult) // true;
+// console.log(person.age) // 27;
+
+/////////////////////////////////////////
+// Copy by value
+// const a = 10 ;
+
+// let b = a;
+
+// b = 30;
+
+// console.log(a) // 10
+// console.log(b) //30
+
+/////////////////////////////////////////
+// const myCity = {
+
+//   country: "Ukraine",
+//   favorite: true
+// }
+
+
+// myCity['popular'] = false;
+
+// const cityName = null;
+
+// myCity[cityName] = "Bila Tserkva"
+
+// console.log(myCity)
 
 // delete myCity.country;
 

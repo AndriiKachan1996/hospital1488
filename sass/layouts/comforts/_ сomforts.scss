@@ -84,6 +84,7 @@
 
     &__overlay {
         @include size(100%, 100%);
+        border-radius: 10px;
         display: flex;
         align-items: center;
         padding: 5px;

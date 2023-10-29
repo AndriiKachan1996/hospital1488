@@ -1,9 +1,9 @@
 .fonds {
 
-	background-image: url(..//..//..//images/10802.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	// background-image: url(..//..//..//images/10802.jpg);
+	// background-position: center;
+	// background-repeat: no-repeat;
+	// background-size: cover;
 
 	padding: 20px 0;
 
@@ -13,16 +13,17 @@
 	}
 
 	&__title {
-		@include font(28px, 700, 1.2, 0.03em);
-		font-family: "Alegreya";
-
-		color: white;
+		@include font(26px, 700, 1.2, 0.03em);
+		text-transform: uppercase;
+		display: inline-block;
+		margin-bottom: 35px;
+		background-image: linear-gradient(to left, #26c0b4, #166c65);
+		color: transparent;
 		background-clip: text;
 
-		margin-bottom: 20px;
-
-
-
+		@include desktop {
+			@include font(46px, 700, 1.2, 0.03em);
+		}
 
 		@include tablet {
 			text-align: center;
@@ -38,7 +39,8 @@
 
 	&__list {
 		display: flex;
-		flex-wrap: wrap;
+		// flex-wrap: nowrap;
+		flex-direction: column;
 		gap: 20px;
 		list-style: none;
 	}
@@ -51,7 +53,7 @@
 
 		// border: 1px solid green;
 
-		flex-basis: calc((100% - 40px) / 3);
+		// flex-basis: calc((100% - 40px) / 3);
 
 		// @include tablet {
 		// 	flex-basis: calc((100% - 40px) / 3);
