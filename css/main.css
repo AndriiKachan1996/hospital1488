@@ -923,8 +923,10 @@ body {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.info__item:hover {
-  border-color: #166c65;
+@media screen and (min-width: 1200px) {
+  .info__item:hover {
+    border-color: #166c65;
+  }
 }
 @media screen and (max-width: 767px) {
   .info__item {
@@ -996,25 +998,32 @@ body {
   }
 }
 
-.info__item:hover .info__link svg {
-  scale: 1.07;
-  fill: #166c65;
+@media screen and (min-width: 1200px) {
+  .info__item:hover .info__link svg:hover {
+    border-color: #166c65;
+    scale: 1.07;
+    fill: #166c65;
+  }
 }
 
-.info__item:hover .info__description {
-  background-image: -webkit-gradient(linear, right top, left top, from(#26c0b4), to(#166c65));
-  background-image: linear-gradient(to left, #26c0b4, #166c65);
-  color: transparent;
-  -webkit-background-clip: text;
-          background-clip: text;
+@media screen and (min-width: 1200px) {
+  .info__item:hover .info__description {
+    background-image: -webkit-gradient(linear, right top, left top, from(#26c0b4), to(#166c65));
+    background-image: linear-gradient(to left, #26c0b4, #166c65);
+    color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
 }
 
-.info__item:hover .info__name {
-  background-image: -webkit-gradient(linear, right top, left top, from(#26c0b4), to(#166c65));
-  background-image: linear-gradient(to left, #26c0b4, #166c65);
-  color: transparent;
-  -webkit-background-clip: text;
-          background-clip: text;
+@media screen and (min-width: 1200px) {
+  .info__item:hover .info__name {
+    background-image: -webkit-gradient(linear, right top, left top, from(#26c0b4), to(#166c65));
+    background-image: linear-gradient(to left, #26c0b4, #166c65);
+    color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
 }
 
 .public {
@@ -1071,8 +1080,10 @@ body {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.public__item:hover {
-  border-color: #166c65;
+@media screen and (min-width: 1200px) {
+  .public__item:hover {
+    border-color: #166c65;
+  }
 }
 @media screen and (max-width: 767px) {
   .public__item {
@@ -1130,34 +1141,38 @@ body {
   }
 }
 
-.public__item:hover svg {
-  scale: 1.07;
-  fill: #166c65;
+@media screen and (min-width: 1200px) {
+  .public__item:hover svg {
+    scale: 1.07;
+    fill: #166c65;
+  }
 }
 
-.public__item:hover .public__name {
-  background-image: -webkit-gradient(linear, right top, left top, from(#26c0b4), to(#166c65));
-  background-image: linear-gradient(to left, #26c0b4, #166c65);
-  color: transparent;
-  -webkit-background-clip: text;
-          background-clip: text;
+@media screen and (min-width: 1200px) {
+  .public__item:hover .public__name {
+    background-image: -webkit-gradient(linear, right top, left top, from(#26c0b4), to(#166c65));
+    background-image: linear-gradient(to left, #26c0b4, #166c65);
+    color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
 }
 
 .fonds {
-  padding: 20px 0;
+  padding: 0 0 35px 0;
 }
 .fonds__logo {
   width: 100px;
   height: 100%;
 }
 .fonds__title {
+  margin-bottom: 35px;
+  display: inline-block;
+  text-transform: uppercase;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
-  display: inline-block;
-  margin-bottom: 35px;
   background-image: -webkit-gradient(linear, right top, left top, from(#26c0b4), to(#166c65));
   background-image: linear-gradient(to left, #26c0b4, #166c65);
   color: transparent;
@@ -1172,23 +1187,6 @@ body {
     letter-spacing: 0.03em;
   }
 }
-@media screen and (min-width: 768px) {
-  .fonds__title {
-    text-align: center;
-    font-size: 38px;
-    font-weight: 600;
-    line-height: 1.8;
-    letter-spacing: 0.07em;
-  }
-}
-@media screen and (min-width: 768px) and (min-width: 1200px) {
-  .fonds__title {
-    font-size: 48px;
-    font-weight: 900;
-    line-height: 1.8;
-    letter-spacing: 0.07em;
-  }
-}
 .fonds__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1197,27 +1195,66 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   list-style: none;
+}
+@media screen and (min-width: 768px) {
+  .fonds__list {
+    gap: 15px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fonds__list {
+    gap: 25px;
+  }
+}
+.fonds__thumb {
+  width: 100%;
+  height: 170px;
+}
+@media screen and (min-width: 768px) {
+  .fonds__thumb {
+    height: 200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fonds__thumb {
+    height: 250px;
+  }
 }
 .fonds__item {
   border-radius: 10px;
-  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  border: 1.5px solid #166c65;
+  -webkit-box-shadow: 10px 15px 10px -10px rgba(0, 0, 0, 0.5);
+          box-shadow: 10px 15px 10px -10px rgba(0, 0, 0, 0.5);
 }
-.fonds__item:hover, .fonds__item:focus {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+@media screen and (min-width: 768px) {
+  .fonds__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 3);
+        flex-basis: calc((100% - 30px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fonds__item {
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  }
+  .fonds__item:hover, .fonds__item:focus {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+  }
 }
 .fonds__img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   border-radius: 10px;
 }
 
@@ -1490,7 +1527,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 5px;
+  padding: 0 5px;
   top: 0;
   left: 0;
   position: absolute;

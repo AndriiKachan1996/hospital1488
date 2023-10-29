@@ -1,6 +1,5 @@
 .comforts {
     padding: 35px 0;
-    // border: 1px solid grey;
 
     &__title {
         margin-bottom: 35px;
@@ -14,11 +13,8 @@
         @include desktop {
             @include font(46px, 700, 1.2, 0.03em);
 
-
         }
     }
-
-
 
     &__list {
         display: flex;
@@ -87,7 +83,7 @@
         border-radius: 10px;
         display: flex;
         align-items: center;
-        padding: 5px;
+        padding: 0 5px;
         top: 0;
         left: 0;
         position: absolute;

@@ -32,9 +32,12 @@
         padding: 20px 0;
         cursor: pointer;
 
-        &:hover {
-            border-color: #166c65;
+        @include desktop {
+            &:hover {
+                border-color: #166c65;
+            }
         }
+
 
         @include mobileMax {
             box-shadow: 15px 20px 12px -15px rgba(0, 0, 0, 0.73);
@@ -87,13 +90,17 @@
 }
 
 .public__item:hover svg {
-    scale: 1.07;
-    fill: #166c65;
+    @include desktop {
+        scale: 1.07;
+        fill: #166c65;
+    }
 
 }
 
 .public__item:hover .public__name {
-    background-image: linear-gradient(to left, #26c0b4, #166c65);
-    color: transparent;
-    background-clip: text;
+    @include desktop {
+        background-image: linear-gradient(to left, #26c0b4, #166c65);
+        color: transparent;
+        background-clip: text;
+    }
 }
