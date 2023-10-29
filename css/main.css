@@ -1454,10 +1454,10 @@ body {
 .comforts__item {
   -ms-flex-preferred-size: calc((100% - 10px) / 2);
       flex-basis: calc((100% - 10px) / 2);
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-transition: -webkit-transform 0.6s ease;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
   border: 1.5px solid #666666;
   border-radius: 10px;
   padding: 30px 0;
