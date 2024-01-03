@@ -39,30 +39,6 @@
     }
 }
 
-// .gallery {
-//     padding: 35px 0 0 0;
-
-//     &__list {}
-
-//     &__item {}
-
-//     &__thumb {
-//         height: 400px;
-//         width: 300px;
-//         // margin-bottom: 100px;
-//     }
-
-//     &__img {
-//         display: block;
-//         height: 100%;
-//         width: 100%;
-//         object-fit: cover;
-//     }
-
-//     &__discription {
-//         border: 1px solid red;
-//     }
-// }
 
 .gallery {
     @include tablet {
