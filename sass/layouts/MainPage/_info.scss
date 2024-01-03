@@ -109,18 +109,12 @@
 
 }
 
-
-
 .info__item:hover .info__link svg {
-
     @include desktop {
-        &:hover {
-            border-color: #166c65;
-            scale: 1.07;
-            fill: #166c65
-        }
+        border-color: #166c65;
+        scale: 1.07;
+        fill: #166c65
     }
-
 }
 
 .info__item:hover .info__description {

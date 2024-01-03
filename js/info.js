@@ -23,7 +23,77 @@ workHours.addEventListener("click", function() {
 
 
 
+// Functions 
 
+// callbacks
+
+// 1. Назва функції = її функіонал 
+// 2. Одна функція = одна задача
+// 3. Не рекомендуєсть змінювати зовнішні, відносно функції, змінні
+
+// function printMyName() {
+//   console.log('Andrii')
+// }
+
+// setTimeout(printMyName, 1000) 
+
+// function anotherFnc( ) {
+// /// lalala
+// }
+
+// function fnWithCallback(callbackFunction) {
+//   callbackFunction() // виклик функціїв тілі іншої функції назв колбек
+// }
+
+// fnWithCallback(anotherFnc)
+
+
+//  створення копії об'кту
+
+// const onePerson = { 
+//   name: "Andrii",
+//   age: 26,
+// }
+ 
+// function incrPersone(persone) { 
+//   const updateAge = Object.assign({}, persone) // new obj
+//   updateAge.age += 1;
+//   return updateAge
+// }
+
+// const updateOnePersonAge = incrPersone(onePerson)
+
+// console.log(onePerson.age) //26
+// console.log(updateOnePersonAge.age) //27
+
+
+// передача значення по посиланню (not good)
+
+// const onePerson = { 
+//   name: "Andrii",
+//   age: 26,
+// }
+
+// function incrPersonAge(data) { 
+//   data.age += 1;
+//   return data
+// }
+
+// incrPersonAge(onePerson)
+// console.log(onePerson.age) // 27
+
+
+// функція це об'єкт 
+
+// function myFnc(a,b) { 
+//   let c 
+//   a = a + 1
+//   c = a + b
+//   return c
+// }
+
+// console.dir(myFnc)
+// console.log(myFnc(5,5))
 
 /////////////////////////////////////////
 // Copy Obj 4 

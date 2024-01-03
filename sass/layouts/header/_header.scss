@@ -6,6 +6,7 @@
 		border-radius: 50%;
 		width: 90px;
 		margin-bottom: -30px;
+		z-index: 100;
 
 		@include tablet {
 			width: 140px;
