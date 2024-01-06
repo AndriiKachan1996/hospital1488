@@ -42,7 +42,7 @@
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
         @include tablet {
-            @include font(20px, 900, 1.9, 0.05em);
+            @include font(25px, 900, 1.9, 0.05em);
         }
     }
 
